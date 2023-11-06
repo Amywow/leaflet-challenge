@@ -44,7 +44,7 @@ function createFeatures(earthquakeData) {
     pointToLayer: function (feature, latlng) {
       let depth = feature.geometry.coordinates[2];
       return L.circleMarker(latlng, {
-        radius: feature.properties.mag * 5,
+        radius: feature.properties.mag * 3.5,
         fillColor: getColor(depth), // Use the getColor function to set the fill color
         color: "#000",
         weight: 1,
